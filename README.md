@@ -75,8 +75,10 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 To run the application clone my repo and run npm install.
 
 ## Demonstration
+<p align="center">
+<img src="/assets/images/TheTechBlog.gif" alt="TechBlog" height="400" width="550">
+</p>
 
-![TechBlog](/assets/images/TheTechBlog.gif)
 
 ## Questions
 
