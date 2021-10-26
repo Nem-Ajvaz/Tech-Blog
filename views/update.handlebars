@@ -1,0 +1,36 @@
+<div class="update-container">
+  <div>
+    <h4 class="update-heading">Update Your Blog</h4>
+
+    <form class="form new-blog-form">
+      <div class="form-group">
+        <label for="blog-name">Previou Blog Title:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="blog-name"
+          name="blog-name"
+          value="{{blog_data.name}}"
+        />
+      </div>
+      <div class="form-group">
+        <label for="blog-desc">Previous Description:</label>
+        <textarea
+          name="blog-desc"
+          id="blog-desc"
+          cols="45"
+          rows="15"
+        >{{blog_data.description}}</textarea>
+      </div>
+      <div class="form-group">
+        <button
+          id="update-bttn"
+          type="submit"
+          class="update-button"
+        >Update</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/js/update.js"></script>

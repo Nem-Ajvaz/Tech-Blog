@@ -1,0 +1,44 @@
+<div class="text-center" id="singular-blog">
+  <h2 class="blog-name">{{name}}</h2>
+  <p class="blog-desc">{{description}}</p>
+  <p class="blog-created">Posted on
+    {{format_date date_created}}
+    by user:
+    {{user.name}}
+  </p>
+
+  <p class="button-p">
+    <button class="comment-button" id="create-comment">Comment</button>
+  </p>
+  <div class="comment-area">
+    <textarea
+      name="comment-description"
+      placeholder="... You have 255 spaces remaining"
+      id="comment-desc"
+      cols="45"
+      rows="15"
+    ></textarea>
+  </div>
+
+  {{#each blogComment as |comment|}}
+    <div class="comment-post">
+      <article class="comment-entry">
+
+        <div class="col-md-7 blog-container">
+
+          <p class="">
+            {{comment.comment_content}}
+          </p>
+
+          <p class="blog-created">Created by
+            {{comment.user.name}}
+            on
+            {{format_date comment.date_created}}</p>
+        </div>
+      </article>
+    </div>
+  {{/each}}
+
+</div>
+
+<script src="/js/comment.js"></script>

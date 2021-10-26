@@ -1,0 +1,26 @@
+{{#if blogs.length}}
+  <div class="current-blogs">
+    <div>
+      <h2>Your blog posts</h2>
+    </div>
+
+    {{#each blogs as |blog|}}
+      <div class="previous-blogs">
+        <div class="previous-blog-header">
+          <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
+        </div>
+        <div class="change-buttons">
+          <button class="delete-btn" data-id="{{blog.id}}">Delete Blog</button>
+          <button class="update-btn"><a
+              class="update-btn"
+              href="/update/{{blog.id}}"
+              data-id="{{blog.id}}"
+            >Update Blog</a></button>
+        </div>
+      </div>
+    {{/each}}
+
+  </div>
+{{/if}}
+
+<script src="./js/delete.js"></script>

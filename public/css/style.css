@@ -1,0 +1,284 @@
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-color: dodgerblue;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+header a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7px;
+}
+
+nav {
+  align-self: center;
+}
+
+.navBar-head {
+  color: aliceblue;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.navBar-head:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.navBar-a {
+  margin-right: 15px;
+  border: transparent solid 1px;
+  padding: 7px;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.navBar-a:hover {
+  border: aliceblue solid 1px;
+  padding: 7px;
+  text-decoration: none;
+  color: aliceblue;
+  border-radius: 3px;
+}
+
+.blog-post {
+  border: solid dodgerblue 2px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 7px;
+}
+
+.blog-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-title a {
+  color: dodgerblue;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.blog-desc {
+  text-align: center;
+  max-width: 600px;
+  word-wrap: break-word;
+  font-family: 'Special Elite', regular;
+  border: dodgerblue solid 1px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.blog-created {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+.blog-container {
+  width: 100%;
+  text-align: center;
+}
+
+.login-bars {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: solid dodgerblue 2px;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.signup-bars {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: solid dodgerblue 2px;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.login-title,
+.signup-title,
+.blog-title a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.login-form,
+signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 12px 5px;
+}
+
+.form-input {
+  margin: 10px;
+  align-self: center;
+}
+
+.login-button,
+.signup-button,
+.create-button,
+.comment-button,
+.update-button {
+  height: 25px;
+  width: 120px;
+  align-self: center;
+}
+.button-p {
+  display: flex;
+  justify-content: center;
+}
+
+.form-input {
+  height: 35px;
+  width: 250px;
+}
+
+.welcome-user {
+  font-size: 25px;
+  font-family: 'Merriweather', serif;
+}
+
+.create-container,
+.update-container {
+  border: solid dodgerblue 2px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.update-container {
+  margin-top: 115px;
+}
+
+.create-heading,
+.update-heading {
+  text-align: center;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.current-blogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+}
+
+.current-blogs div h2 {
+  text-align: center;
+  color: dodgerblue;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.previous-blogs {
+  display: flex;
+  flex-direction: column;
+  border: solid dodgerblue 2px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 7px;
+}
+
+.change-buttons {
+  display: flex;
+  height: 40px;
+  align-self: center;
+}
+
+.delete-btn {
+  margin-right: 10px;
+  height: 30px;
+}
+.update-btn {
+  margin-left: 10px;
+  height: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.previous-blog-header h4 {
+  text-align: center;
+}
+
+.previous-blog-header h4 a {
+  color: dodgerblue;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.blog-name {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.comment-post {
+  border-radius: 10px;
+  border: dodgerblue 1px solid;
+  margin: 5px 0px;
+}
+
+.comment-area {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,64 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>The Tech Blog</title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'
+      rel='stylesheet'
+    />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Open+Sans&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      @import
+      url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Open+Sans&family=Special+Elite&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <header class='header'>
+        <h1>
+          <a class='navBar-head typewriter' href='/'>The Tech Blog . . .</a>
+        </h1>
+        <nav>
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+            <a class='navBar-a' href='/'>Home</a>
+            <a class='navBar-a' href='/profile'>Create Blog</a>
+            <a class='navBar-a' href='/blogs'>Dashboard</a>
+            <a class='navBar-a' id='logout'>Logout</a>
+          {{else}}
+            <div class=''>
+              <a class='navBar-a' href='/'>Home</a>
+              <a class='navBar-a' href='/signup'>Sign Up</a>
+              <a class='navBar-a' href='/login'>Login</a>
+            </div>
+
+          {{/if}}
+        </nav>
+      </header>
+      <main class='main'>
+        <!-- Render the sub layout -->
+        {{{body}}}
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+      <script src='/js/logout.js'></script>
+    {{/if}}
+  </body>
+
+</html>

@@ -1,0 +1,33 @@
+<div class="">
+  <div>
+    <h5 class="welcome-user">Welcome {{name}}!</h5>
+  </div>
+</div>
+
+<div class="create-container">
+  <div>
+    <h4 class="create-heading">Tell us something techy!</h4>
+
+    <form class="form new-blog-form">
+      <div class="form-group">
+        <label for="blog-name">Blog Title:</label>
+        <input class="form-input" type="text" id="blog-name" name="blog-name" />
+      </div>
+      <div class="form-group">
+        <label for="blog-desc">Description:</label>
+        <textarea
+          placeholder="...You have 255 chars"
+          name="blog-desc"
+          id="blog-desc"
+          cols="45"
+          rows="15"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="create-button">Create</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="./js/profile.js"></script>
